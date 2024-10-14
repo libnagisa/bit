@@ -7,7 +7,8 @@ NAGISA_BUILD_LIB_DETAIL_BEGIN
 template<auto BitWidth, class UnderlyingType>
 concept expressable = ::std::unsigned_integral<decltype(BitWidth)> && requires
 {
-	{ ::std::numeric_limits<UnderlyingType>::digits } -> ::std::integral;
+	{ ::std::numeric_limits<UnderlyingType>::digits };
+	requires ::std::integral<decltype(::std::numeric_limits<UnderlyingType>::digits)>;
 	requires (::std::numeric_limits<UnderlyingType>::digits >= BitWidth);
 };
 
