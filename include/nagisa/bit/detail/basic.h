@@ -2,7 +2,7 @@
 
 #include "./environment.h"
 
-NGS_BUILD_LIB_DETAIL_BEGIN
+NAGISA_BUILD_LIB_DETAIL_BEGIN
 
 template<auto BitWidth, class UnderlyingType>
 concept expressable = ::std::unsigned_integral<decltype(BitWidth)> && requires
@@ -125,4 +125,4 @@ constexpr decltype(auto) right_shift(::std::integral auto value) noexcept
 	return details::left_shift<-Shift>(value);
 }
 
-NGS_BUILD_LIB_DETAIL_END
+NAGISA_BUILD_LIB_DETAIL_END
