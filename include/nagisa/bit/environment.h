@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <bit>
 #include <limits>
+#include <climits>
 #include <nagisa/stl_freestanding/tuple/tuple.h>
 //
 #define NAGISA_BUILD_LIB_NAME NAGISA_NS::bits
