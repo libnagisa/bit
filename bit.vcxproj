@@ -160,7 +160,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\nagisa\bit\bit.h" />
-    <ClInclude Include="include\nagisa\bit\core.h" />
+    <ClInclude Include="include\nagisa\bit\detail\bit_of.h" />
+    <ClInclude Include="include\nagisa\bit\export.h" />
     <ClInclude Include="include\nagisa\bit\detail\basic.h" />
     <ClInclude Include="include\nagisa\bit\detail\environment.h" />
     <ClInclude Include="include\nagisa\bit\environment.h" />
