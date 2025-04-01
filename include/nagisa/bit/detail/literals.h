@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "./environment.h"
 
@@ -17,6 +17,8 @@ namespace literals
 	constexpr auto operator ""_tb(unsigned long long int x) noexcept { return x * (1ull << 40); }
 
 	constexpr auto operator ""_pb(unsigned long long int x) noexcept { return x * (1ull << 50); }
+
+	constexpr auto operator ""_byte(unsigned long long int x) noexcept { return ::std::byte{ x }; }
 }
 
 NAGISA_BUILD_LIB_DETAIL_END
