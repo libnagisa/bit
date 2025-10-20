@@ -2,6 +2,7 @@
 
 #include <concepts>
 #include <cstdint>
+#include <cstddef>
 #include <bit>
 #include <limits>
 #include <climits>

@@ -18,7 +18,7 @@ namespace literals
 
 	constexpr auto operator ""_pb(unsigned long long int x) noexcept { return x * (1ull << 50); }
 
-	constexpr auto operator ""_byte(unsigned long long int x) noexcept { return ::std::byte{ x }; }
+	constexpr auto operator ""_byte(char x) noexcept { return static_cast<::std::byte>(x); }
 }
 
 NAGISA_BUILD_LIB_DETAIL_END
